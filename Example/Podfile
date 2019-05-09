@@ -2,9 +2,9 @@ platform :ios, '9.0'
 use_frameworks!
 
 target 'FTMTableSectionModules_Example' do
-  pod 'FTMTableSectionModules', :path => '../'
+  pod 'FTMTableSectionModules/Test', :path => '../'
+end
 
-  target 'FTMTableSectionModules_Tests' do
-    inherit! :search_paths
-  end
+target 'FTMTableSectionModules_Tests' do
+  pod 'FTMTableSectionModules/Test', :path => '../'
 end
